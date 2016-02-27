@@ -1,10 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(void) {
 	int no;
-	int ans = 7;
+	int ans;
 
-	printf("0〜9の整数を当ててください。\n\n");
+  srand(time(NULL));
+  ans = rand() % 1000;
+
+	printf("0〜999の整数を当ててください。\n\n");
 
 	do {
 		printf("いくつかな：");
